@@ -1,5 +1,5 @@
 #!/bin/bash
-mailaddr='ghjk1547@163.com'
+mailaddr=''
 case $1 in
 stop)
 pid=$(ps -ef|grep /root/cmdcheck|awk 'NR==1{print$2}')

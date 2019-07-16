@@ -1,0 +1,11 @@
+[Unit]
+Description=sys-secure
+After=
+[Service]
+Type=simple
+ExecStart=/root/sys-secure/sys-secure.sh &
+ExecReload=/root/sys-secure/sys-secure.sh restart
+ExecStop=/root/sys-secure/sys-secure.sh stop
+PrivateTmp=true
+[Install]
+WantedBy=multi-user.target

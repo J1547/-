@@ -1,0 +1,29 @@
+To: ghjk1547@163.com
+Subject: Suspicious command
+
+The suspicious history:
+   30  cat .bash_history|grep "sed -i"
+   31  cat .bash_history|grep "sed -i" -n
+   32  cat .bash_history|grep -n "sed -i"
+   33  history|grep -n "sed -i"
+   34  history|grep -c "sed -i"
+top -in 1|grep Cpu|awk -F ',' '{print $4}'|sed -i s#' '#''#
+top -in 1|grep Cpu|awk -F ',' '{print $4}'|sed -i s# ##
+top -in 1|grep Cpu|awk -F ',' '{print $4}'|sed -i s/ //
+top -in 1|grep Cpu|awk -F ',' '{print $4}'|sed -i s/' '//g
+history|grep "sed -i"
+cat /proc/cpuinfo
+ls -l /proc/
+cat /proc/meminfo 
+cat /proc/meminfo |grep Memc
+cat /proc/cpuinfo 
+cat /proc/cpuinfo
+cat /proc/zoneinfo
+cat /proc/meminfo
+history|grep /proc
+history |grep "vi "
+vi /etc/passwd
+history |grep "vi "
+
+
+

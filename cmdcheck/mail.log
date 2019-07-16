@@ -1,0 +1,27 @@
+To: ghjk1547@163.com
+Subject:System Status
+
+Cpu status:great
+top - 00:48:55 up  8:53,  2 users,  load average: 0.02, 0.04, 0.05
+Tasks: 143 total,   1 running, 142 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  3.0 us,  3.0 sy,  0.0 ni, 93.9 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  3861508 total,  3286924 free,   297880 used,   276704 buff/cache
+KiB Swap:  2097148 total,  2097148 free,        0 used.  3275112 avail Mem 
+
+Mem status(free):great
+              total        used        free      shared  buff/cache   available
+Mem:        3861508      297780     3287024       12152      276704     3275212
+Swap:       2097148           0     2097148
+
+Disk status(df):full
+Filesystem              1K-blocks    Used Available Use% Mounted on
+/dev/mapper/centos-root  17811456 1816144  15995312  11% /
+devtmpfs                  1918756       0   1918756   0% /dev
+tmpfs                     1930752       0   1930752   0% /dev/shm
+tmpfs                     1930752   11944   1918808   1% /run
+tmpfs                     1930752       0   1930752   0% /sys/fs/cgroup
+/dev/sda1                 1038336  195852    842484  19% /boot
+tmpfs                      386152       0    386152   0% /run/user/0
+
+
+

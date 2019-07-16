@@ -1,0 +1,11 @@
+[Unit]
+Description=cmdcheck
+After=
+[Service]
+Type=simple
+ExecStart=/root/cmdcheck/cmdcheck.sh &
+ExecReload=/root/cmdcheck/cmdcheck.sh restart
+ExecStop=/root/cmdcheck/cmdcheck.sh stop
+PrivateTmp=true
+[Install]
+WantedBy=multi-user.target

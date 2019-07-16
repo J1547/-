@@ -1,0 +1,11 @@
+[Unit]
+Description=nginxfix
+After=network.target
+[Service]
+Type=simple
+ExecStart=/root/nginxfix/nginxfix.sh &
+ExecReload=/root/nginxfix/nginxfix.sh restart
+ExecStop=/root/nginxfix/nginxfix.sh stop
+PrivateTmp=true
+[Install]
+WantedBy=multi-user.target

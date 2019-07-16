@@ -1,10 +1,1 @@
-total 56
--rw-r--r--. 1 root root   996 Jul  9 17:10 a.log
--rw-------. 1 root root  1274 Jun 30 14:57 anaconda-ks.cfg
--rw-------. 1 root root 27586 Jul 10 15:50 dead.letter
-drwxr-xr-x. 2 root root    17 Jul 11 14:53 logs
--rw-r--r--. 1 root root   244 Jul 10 19:26 mail.txt
--rwxr--r--. 1 root root  1492 Jul 11 14:51 nginx_fix.sh
--rw-r--r--. 1 root root  1184 Jul 11 14:50 php-fpm_restart.sh
--rwxr-xr-x. 1 root root   666 Jul 11 14:28 test.sh
--rw-r--r--. 1 root root    49 Jul 11 14:51 tmp.log
+

@@ -1,0 +1,295 @@
+﻿/*========== 公共样式 ==========*/
+ *{
+     padding:0;
+     margin:0;
+}
+html{
+     font-size: 20px;
+}
+ img{
+     border:none;
+}
+ li{
+     list-style:none;
+}
+ a{
+     text-decoration:none;
+}
+ ::selection{
+     background-color: #b3d4fc;
+     text-shadow: blanchedalmond;
+}
+ .clearfix:before, .clearfix:after{
+     content: " ";
+     display: table;
+}
+ .clearfix:after{
+     clear: both;
+}
+/*========== 基本样式 ==========*/
+ .wrap{
+     min-width: 16rem margin:0 auto;
+     overflow:hidden;
+}
+/*=== 头部 ===*/
+
+ .mb-header{
+     width:100%;
+     display:block;
+     background-color:#0096FF;
+}
+ .mb-header .mb-hd-cont{
+     padding:0.5rem 3%;
+     overflow:hidden;
+     min-height:38.0.25rem;
+}
+ .mb-header .mb-hd-l{
+     position:relative;
+     /*float:left;*/
+     width:60%;
+     min-width:180.2.4rem;
+     padding-bottom:12.8%;
+     margin: 0 auto;
+}
+ .mb-header .mb-hd-l a img{
+     position:absolute;
+     width:100%;
+     vertical-align:middle;
+}
+ .mb-header .mb-hd-r{
+     position:relative;
+     float:right;
+     width:12.8%;
+     min-width:38.0.25rem;
+     padding-bottom:12.8%;
+}
+ .mb-header .mb-hd-r img{
+     position:absolute;
+     top:20%;
+     bottom:0;
+     left:10%;
+     right:0;
+     width:80%;
+     min-width:30.0.4rem;
+}
+
+
+/*导航栏*/
+ .MOB-Nav {
+     position: fixed;
+     top: 0;
+     right: -100%;
+     z-index: 200;
+     display: block;
+     overflow-x: hidden;
+     overflow-y: auto;
+     width: 100%;
+     height: 100%;
+     /*height: 28.6rem ;*/
+     /*background-color:  #38a8f4;*/
+}
+.MOB-nav-content {
+    position: relative;
+}
+.MOB-Nav-title{
+     background: url('../images/nav-img.png') no-repeat;
+     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
+     -moz-background-size:100% 100%;  
+     background-size:100% 100%;
+     width: 100%;
+     height: 6.4rem ;
+     margin: 0.7rem auto 0;
+
+}
+.MOB-mask{
+     width:100%;
+     height: 34rem;
+     position: absolute;
+     background-color: #38a8f4;
+     opacity: 0.9;
+     filter: opacity(90);
+}
+ .menu{
+     margin: 0.9rem 0 0 6rem;
+     width: 100%;
+}
+ .MOB-Nav .sub-menu>li {
+     /*background: url(../images/dot.png) no-repeat 0 1.5rem;
+     font-size: 1.5rem!important;*/
+}
+ .menu li {
+    line-height: 2.6rem;
+    height: 2.6rem;
+    width: 10rem;
+    color: #fcfcfc;
+}
+ .menu>li:before{
+     content: '';
+     width: 1rem;
+     height: 2.6rem;
+     display: block;
+     float: left;
+     padding: 0 1.15rem;
+     background: url(../images/tri_close.png) no-repeat center;
+     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
+     -moz-background-size:56% 50%;  
+     background-size:56% 50%;
+
+ }
+ .menu>li:hover:before{
+     content: '';
+     width: 1rem;
+     height: 2.6rem;
+     display: block;
+     float: left;
+     padding: 0 1.15rem;
+     background: url(../images/hover.png) no-repeat center;
+     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
+     -moz-background-size: 36% 70%;
+     background-size: 36% 70%;
+
+ }
+ .menu>li:hover{
+     background: #fff;
+     /*opacity: 0.9; */
+ }
+ .menu li a{
+     color: #fff;
+     font-size: 1.2rem;
+     white-space: nowrap;
+ }
+ .menu>li:hover a{
+     color: #45a1ea;
+ }
+ 
+ .menu>li>ul>li>a {
+     padding: 0 1.2rem;
+     color: #fcfcfc;
+     font-size: 1.2rem;
+     white-space: nowrap;
+}
+ .sub-menu li a:hover {
+     color: #45a1ea;
+}
+.menu>li>ul>li>a:hover{
+     color:#fff;
+}
+ .MOB-Nav .sub-menu {
+     display: none;
+     position: absolute;
+     left: 16rem;
+     top: 7.3rem;
+     background: #fff;
+     color: #fcfcfc;
+     /*opacity: 0.9;*/
+     min-height: 20.8rem;
+}
+.sub-menu>li:hover{
+     background: #3085c2;
+     color: #fff;
+}
+.sub-menu>li:hover a{
+     color: #fff;
+}
+ .MOB-Nav .sub-menu li a {
+     /*padding: 0 1.2rem!important;
+     color: #e5e5e5!important;*/
+     color: #45a1ea;
+     font-size: 1.2rem;
+}
+
+ .nav-icon{
+     width: 3.25rem;
+     height: 3.25rem;
+     background: url('../images/nav-icon.png') no-repeat;
+     filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";  
+     -moz-background-size:100% 100%;  
+     background-size:100% 100%;  
+     opacity: 0.9;
+     filter: opacity(90);
+}
+.amz-sidebar-toggle {
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1000;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+ #gotop a{
+     padding-top: 0.1rem;
+}
+ .fuzzy {
+     /*position: fixed;*/
+     /*top: 0;*/
+     z-index: 200;
+     float: left;
+     display: none;
+     width: 100%;
+     height: 22.5rem;
+
+     /*background-color: #707070;*/
+     /*opacity: .8;*/
+     /*filter: alpha(opacity=80);*/
+     /*-moz-opacity: .8;
+     -khtml-opacity: .8;*/
+}
+.close{
+     display: block;
+     float: right;
+     width: 4rem;
+     height: 2rem;
+     border: 1px #fff solid;
+     color: #fff;
+     text-align: center;
+     line-height: 2rem;
+     margin: 1rem 1.2rem 0 0;
+}
+/*=== 底部 ===*/
+ .mb-footer{
+     text-align:center;
+     font-size:0.8rem;
+     color:#FFF;
+}
+ .mb-footer .mb-ft-cont{
+     padding:0.5rem 3% 0;
+     background:url('../images/bg-footer.png') no-repeat center bottom;
+     background-size:100% auto;
+     background-color:#0096FF;
+     overflow:hidden;
+}
+ .mb-footer .mb-ft-cont .ft-logo img{
+     max-width:70%;
+}
+ .mb-footer .mb-ft-cont .phone{
+     margin:0.8rem 0;
+}
+ .mb-footer .mb-ft-cont .addr{
+     display:flex;
+     justify-content:center;
+}
+ .mb-footer .mb-ft-cont .addr{
+     margin:0.75rem 0 1rem;
+}
+ .mb-footer .mb-ft-cont .addr li{
+     width:45%;
+     padding:0 2%;
+     white-space: nowrap;
+}
+ .mb-footer .website-id{
+     padding:0.5rem 3%;
+     min-height:1rem;
+     background-color:#0A5F9B;
+     line-height:1rem;
+     letter-spacing:0.05rem;
+}
+ @media only screen and (max-width:23.7rem){
+     .mb-footer{
+         font-size:0.7rem;
+    }
+     .website-id .r{
+         display:block;
+    }
+}
+ 

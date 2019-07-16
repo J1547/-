@@ -1,4 +1,5 @@
 #!/bin/bash
+mailaddr=""
 case $1 in
 stop )
 pid=$(ps -ef|grep /root/nginxfix|awk -F ' ' 'NR==1 {print $2}')
@@ -14,7 +15,6 @@ bash /root/nginxfix &
 t=1
 while [ $t -eq 1 ]
 do
-mailaddr="ghjk1547@163.com"
 c=$(ps -ef|grep 'nginx: master process' -c)
 if [ $c -eq 1 ]
 then
